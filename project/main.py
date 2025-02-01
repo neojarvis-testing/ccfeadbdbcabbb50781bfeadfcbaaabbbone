@@ -1,20 +1,3 @@
-import os
-import io
-from hotel_functions import load_hotels, save_hotels, add_hotel, delete_hotel, update_rating, fetch_hotel, find_hotel
-
-# Define the filename for storing hotel data
-
-
-
-def main():
-    #filename
-    FILENAME = 'hotels.json'
-    #loading file
-    hotels_ = load_hotels(FILENAME)
-    # menu 
-    menu= ""
-    while(menu!="6"): #runs until menu becomes 6
-        #menu
         print("1.Add a hotel")
         print("2.Delete a hotel")
         print("3.Update hotel rating")
